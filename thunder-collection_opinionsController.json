@@ -1,0 +1,382 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "opinionsController",
+    "dateExported": "2024-03-01T17:07:20.398Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "093aa4cf-4570-48c4-bc1c-caf2eb98c25d",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-01T14:17:29.550Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "publications",
+            "containerId": "",
+            "created": "2024-03-01T14:17:29.551Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8f31ad8c-d616-43b6-b456-c8a446e64319",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-01T14:17:29.552Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bdd44366-2fdc-4a67-ade4-cf9f73ecfc52",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "093aa4cf-4570-48c4-bc1c-caf2eb98c25d",
+            "name": "login",
+            "url": "localhost:2656/user/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T14:17:29.551Z",
+            "modified": "2024-03-01T15:06:44.857Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "jher"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d358115-7237-423c-86d5-8b464669ca20",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "093aa4cf-4570-48c4-bc1c-caf2eb98c25d",
+            "name": "register",
+            "url": "localhost:2656/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T14:17:29.550Z",
+            "modified": "2024-03-01T14:17:29.550Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "julio "
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Hernandez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "jher"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    },
+                    {
+                        "name": "email",
+                        "value": "eher@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "75cd2e0e-6404-4021-8a63-e4f7e1ce5754",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "093aa4cf-4570-48c4-bc1c-caf2eb98c25d",
+            "name": "update",
+            "url": "localhost:2656/user/update/65e10e9f6787984d4027b73e",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T14:17:29.552Z",
+            "modified": "2024-03-01T14:17:29.552Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Emersinio"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f7b4f257-3b0f-4f44-b4ce-272ecafc379f",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "test",
+            "url": "localhost:2656/publication/test",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-01T14:17:29.553Z",
+            "modified": "2024-03-01T14:17:29.553Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "88fa6958-1340-475d-857b-526366b5013c",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "create",
+            "url": "localhost:2656/publication/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T14:17:29.554Z",
+            "modified": "2024-03-01T15:13:25.502Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZWVjNmUxMTI2ZTIxODU2MjI1N2YiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MzA1NjA0LCJleHAiOjE3MDkzMTY0MDR9.GV0SUIfWNnmiQG4bGlXzVFNDTk_5vpU5hrY0qTp95B8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Viaje familiar"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Diversion"
+                    },
+                    {
+                        "name": "text",
+                        "value": "paseo acuatico"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e10e9f6787984d4027b73e",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ec20017c-1bb0-452b-ad3c-769cbdf89e8a",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "update",
+            "url": "localhost:2656/publication/update/65e126985e3db539f81cf561",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-01T14:17:29.555Z",
+            "modified": "2024-03-01T14:17:29.555Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjM2NWU2MTJjZGY5NzhlYjczMjYiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MjU0Mzg4LCJleHAiOjE3MDkyNjUxODh9.0Q749pybNYDLYSwpCJ8sz2TddbtGCa8Lswf9LUjM99w"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "viaje con la familia"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e12365e612cdf978eb7326",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e97eea9-aa54-4add-9da5-025bd4e2ebb4",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "delete",
+            "url": "localhost:2656/publication/delete/65e129719666f19ed371e04a",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-01T14:17:29.556Z",
+            "modified": "2024-03-01T14:17:29.556Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjM2NWU2MTJjZGY5NzhlYjczMjYiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MjU0Mzg4LCJleHAiOjE3MDkyNjUxODh9.0Q749pybNYDLYSwpCJ8sz2TddbtGCa8Lswf9LUjM99w"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd8bc6ec-543b-4634-9479-bdc9417f8d5f",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "8f31ad8c-d616-43b6-b456-c8a446e64319",
+            "name": "test",
+            "url": "localhost:2656/comment/test",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-01T14:17:29.557Z",
+            "modified": "2024-03-01T14:17:29.557Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "973fecae-c525-43bd-9950-578eec307992",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "8f31ad8c-d616-43b6-b456-c8a446e64319",
+            "name": "save",
+            "url": "localhost:2656/comment/save",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-01T14:17:29.558Z",
+            "modified": "2024-03-01T14:17:29.558Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjM2NWU2MTJjZGY5NzhlYjczMjYiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MjU0Mzg4LCJleHAiOjE3MDkyNjUxODh9.0Q749pybNYDLYSwpCJ8sz2TddbtGCa8Lswf9LUjM99w"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "NICE"
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e129719666f19ed371e04a"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1bb00ff1-3b33-498d-9623-a0274efa2e89",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "8f31ad8c-d616-43b6-b456-c8a446e64319",
+            "name": "update",
+            "url": "localhost:2656/comment/update/65e136e971e9afa5816b5a81",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-01T14:17:29.559Z",
+            "modified": "2024-03-01T14:17:29.559Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjM2NWU2MTJjZGY5NzhlYjczMjYiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MjYxNTkzLCJleHAiOjE3MDkyNzIzOTN9.GtK0X6SDEYqE7TTLqQGxe5lU7G0Ha0XVAVNPjMLRPvs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "GOOD travel"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cecbb96-102a-4c7e-8be5-72b8a626d760",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "8f31ad8c-d616-43b6-b456-c8a446e64319",
+            "name": "delete",
+            "url": "localhost:2656/comment/delete/65e14d697501307ec02e345b",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-01T14:17:29.560Z",
+            "modified": "2024-03-01T14:17:29.560Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjM2NWU2MTJjZGY5NzhlYjczMjYiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MjY0MTIzLCJleHAiOjE3MDkyNzQ5MjN9._OqHi82v7PYgcL7cHuimNj9gieKpohM12kK-Pe6NXdE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ade3f0e5-dbaf-4e9e-965d-7ea76173819c",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "093aa4cf-4570-48c4-bc1c-caf2eb98c25d",
+            "name": "updatePassword",
+            "url": "localhost:2656/user/updatePassword/65e1eec6e1126e218562257f",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-01T14:17:43.081Z",
+            "modified": "2024-03-01T15:06:37.382Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZWVjNmUxMTI2ZTIxODU2MjI1N2YiLCJ1c2VybmFtZSI6ImpoZXIiLCJuYW1lIjoianVsaW8gIiwiaWF0IjoxNzA5MzA1NTU5LCJleHAiOjE3MDkzMTYzNTl9.xqyvIxcLlkuCH7ZXWjR4zIGYHJFsboVxzzvRpBOtSN4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "currentPassword",
+                        "value": "12"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "40c3aa11-6a11-4b94-98fc-efc66d9ca937",
+            "colId": "28885912-5595-4c85-a1a8-c40aa6a9b5fc",
+            "containerId": "ea032a6a-9d8e-42fa-993b-4da528908d7c",
+            "name": "get",
+            "url": "localhost:2656/publication/get",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-01T15:13:00.901Z",
+            "modified": "2024-03-01T15:13:48.487Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
